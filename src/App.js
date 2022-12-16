@@ -15,6 +15,7 @@ const App = () => {
   useEffect(() => {
     filterHandler();
     saveLocalTodos();
+    <em>// eslint-disable-next-line react-hooks/exhaustive-deps</em>
   }, [todos, status]);
 
   const filterHandler = () => {
